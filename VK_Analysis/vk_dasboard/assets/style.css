@@ -1,0 +1,359 @@
+/* =========================
+   черная тема
+   ========================= */
+
+/* Переопределение цвета текста везде */
+[data-baseweb="button"] {
+  color: #e6edf3 !important;
+}
+button[kind="secondary"] {
+  color: #e6edf3 !important;
+}
+
+
+
+.stApp,
+[data-testid="stAppViewContainer"] {
+  background: #0b0f14 !important;
+  color: #e6edf3 !important;
+}
+
+[data-testid="stHeader"] { background: transparent !important; }
+
+footer { visibility: hidden; }
+#MainMenu { visibility: hidden; }
+
+section[data-testid="stSidebar"] {
+  background: #070a0f !important;
+  border-right: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+h1, h2, h3, h4, p, span, div, label {
+  color: #e6edf3 !important;
+}
+
+/* =========================
+   карточки
+   ========================= */
+
+.card {
+  background: #0f1622;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: 14px 14px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.45);
+}
+
+.card.accent-blue   { border-left: 6px solid #3b82f6; }
+.card.accent-green  { border-left: 6px solid #22c55e; }
+.card.accent-yellow { border-left: 6px solid #eab308; }
+.card.accent-red    { border-left: 6px solid #ef4444; }
+.card.accent-purple { border-left: 6px solid #a855f7; }
+
+.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  margin-right: 6px;
+}
+
+/* =========================
+   цветные кнопки
+   ========================= */
+
+.stButton > button {
+  border-radius: 14px !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  background: rgba(255,255,255,0.05) !important;
+  color: #e6edf3 !important;
+  padding: 10px 14px !important;
+  font-weight: 600 !important;
+}
+
+.stButton > button:hover {
+  filter: brightness(1.15) !important;
+  transform: translateY(-1px) !important;
+}
+
+button[data-testid="baseButton-secondary"][data-key="btn_blue"],
+button[data-testid="baseButton-primary"][data-key="btn_blue"] {
+  background: #1d4ed8 !important;
+  border-color: #3b82f6 !important;
+}
+
+button[data-testid="baseButton-secondary"][data-key="btn_green"],
+button[data-testid="baseButton-primary"][data-key="btn_green"] {
+  background: #15803d !important;
+  border-color: #22c55e !important;
+}
+
+button[data-testid="baseButton-secondary"][data-key="btn_yellow"],
+button[data-testid="baseButton-primary"][data-key="btn_yellow"] {
+  background: #a16207 !important;
+  border-color: #eab308 !important;
+}
+
+button[data-testid="baseButton-secondary"][data-key="btn_purple"],
+button[data-testid="baseButton-primary"][data-key="btn_purple"] {
+  background: #6d28d9 !important;
+  border-color: #a855f7 !important;
+}
+
+/* =========================
+   
+   ========================= */
+
+.tile {
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.45);
+}
+
+.tile-title {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.tile-sub {
+  font-size: 13px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.tile-blue   { background: linear-gradient(135deg, #0b1b44, #103a8b); border-left: 6px solid #3b82f6; }
+.tile-green  { background: linear-gradient(135deg, #062815, #0f6d35); border-left: 6px solid #22c55e; }
+.tile-purple { background: linear-gradient(135deg, #1b0b3a, #4c1d95); border-left: 6px solid #a855f7; }
+.tile-yellow { background: linear-gradient(135deg, #2b1f06, #7a5d0a); border-left: 6px solid #eab308; }
+
+/* 🔥 УВЕЛИЧЕННАЯ ПЛИТКА (только для Контент-анализа) */
+/*
+.tile-big {
+  padding: 18px;
+}
+.tile-big .tile-title {
+  font-size: 17px;
+}
+.tile-big .tile-sub {
+  font-size: 14px;
+}
+
+.tile-green {
+  min-height: 120px;
+}
+*/
+.tile {
+  min-height: 120px;
+}
+/* =========================
+   
+   ========================= */
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label[data-baseweb="radio"] {
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+
+section[data-testid="stSidebar"] div[role="radiogroup"] label[data-baseweb="radio"]:has(input:checked) {
+  background: rgba(59,130,246,0.18);
+  border: 1px solid rgba(59,130,246,0.35);
+}
+
+/* =========================
+   главный бар
+   ========================= */
+
+.topbar {
+  background: #070a0f;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  padding: 10px 14px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  flex-wrap: nowrap;
+}
+
+.apptitle {
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.topbar .left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.topbar .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  white-space: nowrap;
+}
+
+.topnote {
+  opacity: .85;
+  font-size: 12px;
+  margin: 8px 0 14px 6px;
+}
+
+/* =========================
+   шкала риска 
+   ========================= */
+
+.risk-title {
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  opacity: 0.9;
+}
+
+.risk-wrap {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  white-space: nowrap;
+}
+
+.riskbar {
+  position: relative;
+  width: 240px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0,255,170,0.06);
+}
+
+.riskbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255,255,255,0.22) 0px,
+    rgba(255,255,255,0.22) 1px,
+    rgba(0,0,0,0) 1px,
+    rgba(0,0,0,0) 8px
+  );
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.riskfill {
+  position:absolute;
+  height:100%;
+  left:0;
+  top:0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00ff9a 0%, #eab308 55%, #ff3b3b 100%);
+  box-shadow: 0 0 18px rgba(0,255,154,0.20);
+}
+
+.riskmarker {
+  position:absolute;
+  top:-7px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 7px solid rgba(230,237,243,0.85);
+  filter: drop-shadow(0 0 8px rgba(0,255,154,0.25));
+}
+
+.risknum {
+  font-weight: 800;
+  font-size: 12px;
+  opacity: 0.95;
+  min-width: 60px;
+  text-align:right;
+}
+
+.risklevel {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  font-weight: 800;
+}
+
+.risk-low  { border-color: rgba(34,197,94,0.65); color: #22c55e; }
+.risk-med  { border-color: rgba(234,179,8,0.75); color: #eab308; }
+.risk-high { border-color: rgba(239,68,68,0.75); color: #ef4444; }
+
+/* DownloadButton с черным текстом */
+div[data-testid="stDownloadButton"] > button,
+div.stDownloadButton > button {
+  background: linear-gradient(135deg, #1b0b3a, #4c1d95) !important;
+  border: 1px solid rgba(168,85,247,0.6) !important;
+  color: #000000 !important;  /* Теперь точно черный */
+  font-weight: 700 !important;
+  border-radius: 14px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 8px 20px rgba(168,85,247,0.25) !important;
+}
+
+div[data-testid="stDownloadButton"] > button:hover,
+div.stDownloadButton > button:hover {
+  filter: brightness(1.15) !important;
+  transform: translateY(-1px) !important;
+}
+
+
+
+
+/* File Uploader — ЧЕРНЫЙ ФОН + зеленая кнопка */
+[data-testid="stFileUploader"] {
+  background: #0f1622 !important;  /* Черный фон как ваши карточки */
+  border-radius: 12px !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+}
+
+[data-testid="stFileUploader"] *,
+[data-testid="stFileUploader"] div {
+  background: #0f1622 !important;  /* ВСЕ вложенные элементы черные */
+  color: #e6edf3 !important;
+}
+
+/* Зеленая кнопка Browse Files + hover */
+[data-testid="stFileUploader"] button,
+[data-testid="stFileUploader"] label kbd,
+[data-testid="stFileUploader"] [data-testid="stButton"] > button {
+  background: #166534 !important;
+  color: #ffffff !important;
+  border: 1px solid #22c55e !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-testid="stFileUploader"] button:hover,
+[data-testid="stFileUploader"] label kbd:hover {
+  background: #15803d !important;
+  filter: brightness(1.15) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(34,197,94,0.4) !important;
+}
